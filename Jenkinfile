@@ -1,0 +1,30 @@
+pipeline {
+    agent any
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('Build') {
+            steps {
+                echo 'Hello Build'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Hello Test'
+            }
+        }
+        stage('Deploy') {  // Renamed from 'Hello'
+            steps {
+                echo 'Hello Deploy'
+            }
+        }
+        stage('Delivery') {  // Corrected spelling
+            steps {
+                echo 'Hello Delivery'
+            }
+        }
+    }
+}
